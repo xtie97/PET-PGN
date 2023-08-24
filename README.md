@@ -4,7 +4,7 @@ Welcome to the **Pointer Generator Network (PGN) for PET report summarization** 
 
 ## :mag_right: Overview
 
-PGN is based on a **bidirectional-LSTM** with a copy mechanism to address the out-of-vocabulary (OOV) issue. The architecture has been modified by Zhang et al. in their [work](https://arxiv.org/abs/1809.04698) regarding radiology report summarization.
+PGN is based on a **bidirectional-LSTM** with a copy mechanism to address the out-of-vocabulary (OOV) issue. The architecture has been modified by Zhang et al. in their [work](#https://arxiv.org/abs/1809.04698) regarding radiology report summarization.
 
 ## :file_folder: Repository Structure
 
@@ -32,7 +32,7 @@ python eval.py  saved_models/01 --model best_model.pt --data_dir dataset/PET-CT 
 
 ## 👏 Acknowledgments
 
-The code was adapted from the original implementation [https://github.com/yuhaozhang/summarize-radiology-findings].
+The code was adapted from the [original implementation](#https://github.com/yuhaozhang/summarize-radiology-findings).
 
 For any inquiries or feedback, feel free to raise an issue or contribute via pull requests!
 
