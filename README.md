@@ -28,7 +28,9 @@ python train.py --id 01 --data_dir dataset/PET-CT --max_dec_len 512 --background
 ```
 
 **Inference / Impression Generation**:
+```bash 
 python eval.py  saved_models/01 --model best_model.pt --data_dir dataset/PET-CT --dataset test --gold saved_predictions/01/test_ref.txt --out saved_predictions/01/test_pred.txt
+```
 
 ## 👏 Acknowledgments
 
