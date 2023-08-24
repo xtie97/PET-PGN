@@ -13,7 +13,7 @@ PGN is based on a **bidirectional-LSTM** with a copy mechanism to address the ou
 - `train.py`: The script for model training.
 - `eval.py`: The script for impression generation. 
 - `compute_rough_score.py`: Computes ROUGE metrics (ROUGE-1, ROUGE-2, ROUGE-3, and ROUGE-L) of generated impressions with original clinical impressions as reference.
-- `saved_models/01/best_model.pt`: model weights 
+- `saved_models/01/best_model.pt`: The model we have trained on 30k+ PET reports (PET/CT whole-body, PET/MR whole-body, PET/CT myocardial, etc.) in our UW hospital. 
 
 ## :computer: Usage Instructions
 
