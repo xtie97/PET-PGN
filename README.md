@@ -34,7 +34,7 @@ python eval.py  saved_models/01 --model best_model.pt --data_dir dataset/PET-CT 
 
 ## 👏 Acknowledgments
 
-The code was adapted from the original [implementation in GitHub](https://github.com/yuhaozhang/summarize-radiology-findings).
+The code was adapted from the original [implementation](https://github.com/yuhaozhang/summarize-radiology-findings).
 
 For any inquiries or feedback, feel free to raise an issue or contribute via pull requests!
 
