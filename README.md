@@ -1,25 +1,36 @@
-# Pointer Generator Network (PGN) for PET report summarization 
+# Pointer Generator Network (PGN) for PET Report Summarization :bookmark_tabs:
 
-This is the implementation for [paper]. In this work, we aim to derive impressions from PET findings and relevant background information. PGN is a bidrectional-LSTM with copy mechanism to solve the out-of-vocabulary problem. The architecture was modified by Zhang et. al. in "Learning to Summarize Radiology Findings" [https://arxiv.org/abs/1809.04698] to accomodate clnical information, including the patient history and the indication for the examination. 
+Welcome to the **Pointer Generator Network (PGN) for PET report summarization** implementation, as featured in our research [paper](#link-to-paper). Our endeavor focuses on deriving impressions from PET findings coupled with pertinent background information.
 
-Structure: 
-convert_json.py: convert spreadsheet to json file 
-prepare_vocab: prepare our corpus by mapping individual words to the embeddings. 
-train.py: code for model training 
-eval.py: code for impression generation
-compute_rough_score.py: compute ROUGE-1, ROUGE-2, ROUGE-3 and ROUGE-L between the generated impression and the original clinial impression. 
+## :mag_right: Overview
 
-Usage:
-To prepare the dataset and vocabulary: 
+PGN is based on a **bidirectional-LSTM** armed with a copy mechanism to address the out-of-vocabulary challenges. The architecture has been refined by Zhang et al. in their work, ["Learning to Summarize Radiology Findings"](https://arxiv.org/abs/1809.04698), enhancing its capacity to assimilate clinical data—ranging from patient histories to examination indications.
+
+## :file_folder: Repository Structure
+
+- `convert_json.py`: Transforms spreadsheets into JSON files.
+- `prepare_vocab.py`: Orchestrates our corpus by linking words with their embeddings.
+- `train.py`: The central hub for model training.
+- `eval.py`: Handles the generation of impressions.
+- `compute_rough_score.py`: Computes ROUGE metrics (ROUGE-1, ROUGE-2, ROUGE-3, and ROUGE-L) juxtaposing generated impressions with their original clinical counterparts.
+
+## :computer: Usage Instructions
+
+**Prepare Dataset and Vocabulary**:
+```bash
 python prepare_vocab.py dataset/PET-CT dataset/vocab --glove_dir dataset/glove --wv_file radglove.800M.100d.txt --wv_dim 100 --lower
+```
 
-To run training:
+**Initial Training**:
+```bash
 python train.py --id 01 --data_dir dataset/PET-CT --max_dec_len 512 --background --num_epoch 30 --batch_size 25
+```
 
-To run inference:
-os.makedirs(saved_prediction, exist_ok=True)
+**Inference / Impression Generation**:
 python eval.py  saved_models/01 --model best_model.pt --data_dir dataset/PET-CT --dataset test --gold saved_predictions/01/test_ref.txt --out saved_predictions/01/test_pred.txt
 
-
-Acknowledgments:
+## :Acknowledgments
 The codes were adapted from the original implementation [https://github.com/yuhaozhang/summarize-radiology-findings].
+
+For any inquiries or feedback, feel free to raise an issue or contribute via pull requests!
+
