@@ -1,10 +1,10 @@
 # Pointer Generator Network (PGN) for PET Report Summarization :bookmark_tabs:
 
-Welcome to the **Pointer Generator Network (PGN) for PET report summarization** implementation. This model is included in our [paper](#link-to-paper) and sets a baseline for deriving impressions from PET findings and relevant background information.
+Welcome to the **Pointer Generator Network (PGN) for PET report summarization** implementation. This model is included in our [paper](#link-to-paper) and sets a baseline for deriving impressions based on PET findings and relevant background information.
 
 ## :mag_right: Overview
 
-PGN is based on a **bidirectional-LSTM** armed with a copy mechanism to address the out-of-vocabulary challenges. The architecture has been refined by Zhang et al. in their work, ["Learning to Summarize Radiology Findings"](https://arxiv.org/abs/1809.04698), enhancing its capacity to assimilate clinical data—ranging from patient histories to examination indications.
+PGN is based on a **bidirectional-LSTM** equipped with a copy mechanism to address the out-of-vocabulary (OOV) issue. The architecture has been modified by Zhang et al. in their work, ["Learning to Summarize Radiology Findings"](https://arxiv.org/abs/1809.04698), enhancing its capacity to assimilate clinical data—ranging from patient histories to examination indications.
 
 ## :file_folder: Repository Structure
 
