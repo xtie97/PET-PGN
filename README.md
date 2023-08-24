@@ -29,7 +29,8 @@ python train.py --id 01 --data_dir dataset/PET-CT --max_dec_len 512 --background
 **Inference / Impression Generation**:
 python eval.py  saved_models/01 --model best_model.pt --data_dir dataset/PET-CT --dataset test --gold saved_predictions/01/test_ref.txt --out saved_predictions/01/test_pred.txt
 
-## :Acknowledgments
+## 👏 Acknowledgments
+
 The codes were adapted from the original implementation [https://github.com/yuhaozhang/summarize-radiology-findings].
 
 For any inquiries or feedback, feel free to raise an issue or contribute via pull requests!
