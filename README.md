@@ -1,6 +1,6 @@
 # Pointer Generator Network (PGN) for PET Report Summarization :bookmark_tabs:
 
-Welcome to the **Pointer Generator Network (PGN) for PET report summarization** implementation, as featured in our research [paper](#link-to-paper). Our endeavor focuses on deriving impressions from PET findings coupled with pertinent background information.
+Welcome to the **Pointer Generator Network (PGN) for PET report summarization** implementation, as featured in our research [paper](#link-to-paper). Our endeavor focuses on deriving impressions from PET findings and relevant background information. It is a baseline model. 
 
 ## :mag_right: Overview
 
