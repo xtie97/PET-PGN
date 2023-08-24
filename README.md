@@ -4,15 +4,16 @@ Welcome to the **Pointer Generator Network (PGN) for PET report summarization** 
 
 ## :mag_right: Overview
 
-PGN is based on a **bidirectional-LSTM** equipped with a copy mechanism to address the out-of-vocabulary (OOV) issue. The architecture has been modified by Zhang et al. in their work, ["Learning to Summarize Radiology Findings"](https://arxiv.org/abs/1809.04698), enhancing its capacity to assimilate clinical data—ranging from patient histories to examination indications.
+PGN is based on a **bidirectional-LSTM** with a copy mechanism to address the out-of-vocabulary (OOV) issue. The architecture has been modified by Zhang et al. in their [work](https://arxiv.org/abs/1809.04698) regarding radiology report summarization.
 
 ## :file_folder: Repository Structure
 
-- `convert_json.py`: Transforms spreadsheets into JSON files.
-- `prepare_vocab.py`: Orchestrates our corpus by linking words with their embeddings.
-- `train.py`: The central hub for model training.
-- `eval.py`: Handles the generation of impressions.
-- `compute_rough_score.py`: Computes ROUGE metrics (ROUGE-1, ROUGE-2, ROUGE-3, and ROUGE-L) juxtaposing generated impressions with their original clinical counterparts.
+- `convert_json.py`: Converts spreadsheets into JSON files.
+- `prepare_vocab.py`: Prepares our corpus by mapping individual words to their pretrained word embeddings.
+- `train.py`: The script for model training.
+- `eval.py`: The script for impression generation. 
+- `compute_rough_score.py`: Computes ROUGE metrics (ROUGE-1, ROUGE-2, ROUGE-3, and ROUGE-L) of generated impressions with original clinical impressions as reference.
+- `saved_models/01/best_model.pt`: model weights 
 
 ## :computer: Usage Instructions
 
